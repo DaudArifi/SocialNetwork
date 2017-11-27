@@ -116,7 +116,7 @@
                                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="signInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tno-Cu-aUQ"/>
+                                                    <action selector="signInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j79-X6-aqV"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -151,8 +151,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="EmailField" destination="1h4-ku-oWC" id="GLT-Y8-OfW"/>
-                        <outlet property="PasswordField" destination="p6d-1P-ba4" id="JNS-vk-SWb"/>
+                        <outlet property="emailField" destination="1h4-ku-oWC" id="g6i-fy-6XV"/>
+                        <outlet property="passwordField" destination="p6d-1P-ba4" id="oKq-kF-rsD"/>
                         <segue destination="cEw-0B-J1I" kind="show" identifier="segueToFeedVC" id="LAN-jU-qYI"/>
                     </connections>
                 </viewController>

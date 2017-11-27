@@ -14,8 +14,8 @@ import SwiftKeychainWrapper
 
 class SignInVC: UIViewController {
 
-    @IBOutlet weak var EmailField: FancyField!
-    @IBOutlet weak var PasswordField: FancyField!
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,34 +58,37 @@ class SignInVC: UIViewController {
                     let userData = ["provider": _credential.provider]
                     self.completeSignIn(id: user.uid, userData: userData)
                 }
-        }
-        }
-    }
-          }
-    @IBAction func signInTapped(_ sender: AnyObject) {
-            Auth.auth().signIn(withEmail: "user@email.com", password: "password", completion: { (user, error) in
-            if error == nil {
-                print("DAUD: successfully signed in firebase!")
-                if let user = user {
-                    let userData = ["provider": user.providerID]
-                    self.completeSignIn(id: user.uid, userData: userData)
-                }
-            } else {
-                Auth.auth().createUser(withEmail: "user@email.com", password: "password", completion: { (user, error) in
-                    if error != nil {
-                        print("DAUD: User can`t be created in firebase")
-                        
-                        if let user = user {
-                            let userData = ["provider": user.providerID]
-                            self.completeSignIn(id: user.uid, userData: userData)
-                        }
-                    } else {
-                        print("DAUD: user successfully created in firebase")
-                    }
-                })
             }
-        })
+        }
     }
+}
+    
+    @IBAction func signInTapped(_ sender: AnyObject) {
+        if let email = emailField.text, let pwd = passwordField.text {
+            Auth.auth().signIn(withEmail: email, password: pwd, completion: { (user, error) in
+                if error == nil {
+                    print("DAUD: Email user authenticated with Firebase")
+                    if let user = user {
+                        let userData = ["provider": user.providerID]
+                        self.completeSignIn(id: user.uid, userData: userData)
+                    }
+                } else {
+                    Auth.auth().createUser(withEmail: email, password: pwd, completion: { (user, error) in
+                        if error != nil {
+                            print("DAUD: Unable to authenticate with Firebase using email")
+                        } else {
+                            print("DAUD: Successfully authenticated with Firebase")
+                            if let user = user {
+                                let userData = ["provider": user.providerID]
+                                self.completeSignIn(id: user.uid, userData: userData)
+                            }
+                        }
+                    })
+                }
+            })
+        }
+    }
+    
     
     func completeSignIn(id: String, userData: Dictionary<String, String>) {
         DataService.ds.createFirebaseDBUser(uid: id, userData: userData)
@@ -93,5 +96,5 @@ class SignInVC: UIViewController {
                 print("DAUD: Data saved to keychain - \(KeyChainResult)")
                 performSegue(withIdentifier: "segueToFeedVC", sender: nil)
             }
-        }
+}
 
