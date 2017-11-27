@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2308D7461FC4683C009B34C5 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2308D7451FC4683C009B34C5 /* FeedVC.swift */; };
+		231FC79D1FC8A544001CD643 /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231FC79C1FC8A544001CD643 /* DataServices.swift */; };
 		23AAD6E21FA64C290066D981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AAD6E11FA64C290066D981 /* AppDelegate.swift */; };
 		23AAD6E41FA64C290066D981 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AAD6E31FA64C290066D981 /* SignInVC.swift */; };
 		23AAD6E71FA64C290066D981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23AAD6E51FA64C290066D981 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		2308D7451FC4683C009B34C5 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		231FC79C1FC8A544001CD643 /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
 		23AAD6DE1FA64C290066D981 /* SocialNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23AAD6E11FA64C290066D981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23AAD6E31FA64C290066D981 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -106,6 +108,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		231FC79B1FC8A518001CD643 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				231FC79C1FC8A544001CD643 /* DataServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		23AAD6D51FA64C290066D981 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +141,7 @@
 		23AAD6E01FA64C290066D981 /* SocialNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				231FC79B1FC8A518001CD643 /* Services */,
 				23D634FD1FABA01C00D49BF0 /* SocialNetwork.entitlements */,
 				23D634FC1FAB990300D49BF0 /* Model */,
 				23D634FB1FAB98FC00D49BF0 /* View */,
@@ -533,6 +544,7 @@
 				2308D7461FC4683C009B34C5 /* FeedVC.swift in Sources */,
 				23CDFAB81FA7955400E96E46 /* RoundBtn.swift in Sources */,
 				23AAD6E21FA64C290066D981 /* AppDelegate.swift in Sources */,
+				231FC79D1FC8A544001CD643 /* DataServices.swift in Sources */,
 				23CDFAB61FA7955400E96E46 /* FancyField.swift in Sources */,
 				23CDFAB51FA7955400E96E46 /* FancyBtn.swift in Sources */,
 				23CDFAB41FA7955400E96E46 /* FancyView.swift in Sources */,
