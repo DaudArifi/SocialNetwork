@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2308D7461FC4683C009B34C5 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2308D7451FC4683C009B34C5 /* FeedVC.swift */; };
 		231FC79D1FC8A544001CD643 /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231FC79C1FC8A544001CD643 /* DataServices.swift */; };
+		23662BDD1FCC6BD7000A2CBC /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23662BDC1FCC6BD7000A2CBC /* Post.swift */; };
 		23AAD6E21FA64C290066D981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AAD6E11FA64C290066D981 /* AppDelegate.swift */; };
 		23AAD6E41FA64C290066D981 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AAD6E31FA64C290066D981 /* SignInVC.swift */; };
 		23AAD6E71FA64C290066D981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23AAD6E51FA64C290066D981 /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 /* Begin PBXFileReference section */
 		2308D7451FC4683C009B34C5 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		231FC79C1FC8A544001CD643 /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
+		23662BDC1FCC6BD7000A2CBC /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		23AAD6DE1FA64C290066D981 /* SocialNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23AAD6E11FA64C290066D981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23AAD6E31FA64C290066D981 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				23CDFAAD1FA7952F00E96E46 /* GoogleService-Info.plist */,
 				23AAD6E11FA64C290066D981 /* AppDelegate.swift */,
 				23CDFAB21FA7955300E96E46 /* Constants.swift */,
+				23662BDC1FCC6BD7000A2CBC /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -540,6 +543,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23B0A9DC1FBF5315002F86EE /* CircleView.swift in Sources */,
+				23662BDD1FCC6BD7000A2CBC /* Post.swift in Sources */,
 				23AAD6E41FA64C290066D981 /* SignInVC.swift in Sources */,
 				2308D7461FC4683C009B34C5 /* FeedVC.swift in Sources */,
 				23CDFAB81FA7955400E96E46 /* RoundBtn.swift in Sources */,
