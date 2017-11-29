@@ -24,6 +24,7 @@
 		23CDFAB61FA7955400E96E46 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CDFAB11FA7955300E96E46 /* FancyField.swift */; };
 		23CDFAB71FA7955400E96E46 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CDFAB21FA7955300E96E46 /* Constants.swift */; };
 		23CDFAB81FA7955400E96E46 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CDFAB31FA7955400E96E46 /* RoundBtn.swift */; };
+		23D2C5A11FCF11780076308A /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D2C5A01FCF11780076308A /* PostCell.swift */; };
 		4C12DC4AFB70573BDE7F43E8 /* Pods_SocialNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81C624787BE4AB912B98C871 /* Pods_SocialNetwork.framework */; };
 		91B172B58A9C6CD5B2314CB8 /* Pods_SocialNetworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C3236C361BE72002FB3028 /* Pods_SocialNetworkTests.framework */; };
 		D8249B73A7EF2063089AEBD1 /* Pods_SocialNetworkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 807ABA241401BBBFAA198184 /* Pods_SocialNetworkUITests.framework */; };
@@ -70,6 +71,7 @@
 		23CDFAB11FA7955300E96E46 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		23CDFAB21FA7955300E96E46 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		23CDFAB31FA7955400E96E46 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
+		23D2C5A01FCF11780076308A /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		23D634FD1FABA01C00D49BF0 /* SocialNetwork.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SocialNetwork.entitlements; sourceTree = "<group>"; };
 		27BBD9DA23122DD22266C723 /* Pods-SocialNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialNetwork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialNetwork/Pods-SocialNetwork.debug.xcconfig"; sourceTree = "<group>"; };
 		52C3236C361BE72002FB3028 /* Pods_SocialNetworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialNetworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,6 +204,7 @@
 				23AAD6E11FA64C290066D981 /* AppDelegate.swift */,
 				23CDFAB21FA7955300E96E46 /* Constants.swift */,
 				23662BDC1FCC6BD7000A2CBC /* Post.swift */,
+				23D2C5A01FCF11780076308A /* PostCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -553,6 +556,7 @@
 				23CDFAB51FA7955400E96E46 /* FancyBtn.swift in Sources */,
 				23CDFAB41FA7955400E96E46 /* FancyView.swift in Sources */,
 				23CDFAB71FA7955400E96E46 /* Constants.swift in Sources */,
+				23D2C5A11FCF11780076308A /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
