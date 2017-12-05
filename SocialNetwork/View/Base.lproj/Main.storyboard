@@ -246,6 +246,9 @@
                                                 <state key="normal" image="add-post">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="postBtnTapped:" destination="cEw-0B-J1I" eventType="touchUpInside" id="lGv-p1-g1N"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -410,6 +413,7 @@
                     </view>
                     <connections>
                         <outlet property="addImage" destination="kjU-2a-AIi" id="L79-ZP-beV"/>
+                        <outlet property="captionField" destination="bkq-zN-Sh1" id="xQz-3K-enA"/>
                         <outlet property="tableView" destination="Yh2-2G-MFE" id="YY0-8O-Dz5"/>
                     </connections>
                 </viewController>

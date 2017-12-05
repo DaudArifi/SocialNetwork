@@ -148,8 +148,8 @@
 				231FC79B1FC8A518001CD643 /* Services */,
 				23D634FD1FABA01C00D49BF0 /* SocialNetwork.entitlements */,
 				23D634FC1FAB990300D49BF0 /* Model */,
-				23D634FB1FAB98FC00D49BF0 /* View */,
 				23D634FA1FAB98F500D49BF0 /* Controller */,
+				23D634FB1FAB98FC00D49BF0 /* View */,
 			);
 			path = SocialNetwork;
 			sourceTree = "<group>";
